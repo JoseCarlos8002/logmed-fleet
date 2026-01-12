@@ -192,18 +192,18 @@ export const Freight: React.FC = () => {
           <table className="w-full text-left border-collapse whitespace-nowrap relative">
             <thead className="sticky top-0 z-10 bg-slate-50 dark:bg-slate-800 shadow-sm">
               <tr className="border-b border-slate-200 dark:border-slate-700">
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[150px]">Motorista</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Rota</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Manifesto</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Data</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[120px]">Origem</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[120px]">Destino</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-20">KM Ini</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-20">KM Fim</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Cidades Adic.</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-16">Pts</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Pedágios</th>
-                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Valor Total</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[150px] border-r border-slate-200 dark:border-slate-700">Motorista</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px] border-r border-slate-200 dark:border-slate-700">Rota</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px] border-r border-slate-200 dark:border-slate-700">Manifesto</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px] border-r border-slate-200 dark:border-slate-700">Data</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[120px] border-r border-slate-200 dark:border-slate-700">Origem</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[120px] border-r border-slate-200 dark:border-slate-700">Destino</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-20 border-r border-slate-200 dark:border-slate-700">KM Ini</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-20 border-r border-slate-200 dark:border-slate-700">KM Fim</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[250px] border-r border-slate-200 dark:border-slate-700">Cidades Adic.</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-16 border-r border-slate-200 dark:border-slate-700">Pts</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px] border-r border-slate-200 dark:border-slate-700">Pedágios</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px] border-r border-slate-200 dark:border-slate-700">Valor Total</th>
                 <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-20 text-center">Ações</th>
               </tr>
             </thead>
@@ -229,24 +229,24 @@ export const Freight: React.FC = () => {
                     key={f.id}
                     className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group"
                   >
-                    <td className="px-3 py-2.5 text-sm font-bold max-w-[180px] truncate" title={f.drivers?.name}>{f.drivers?.name || '-'}</td>
-                    <td className="px-3 py-2.5 text-sm max-w-[120px] truncate" title={f.routes?.id}>{f.routes?.id || '-'}</td>
-                    <td className="px-3 py-2.5 text-sm font-semibold">{f.manifesto || '-'}</td>
-                    <td className="px-3 py-2.5 text-sm text-text-secondary">{new Date(f.freight_date).toLocaleDateString('pt-BR')}</td>
-                    <td className="px-3 py-2.5 text-sm max-w-[150px] truncate" title={f.origin}>{f.origin}</td>
-                    <td className="px-3 py-2.5 text-sm max-w-[150px] truncate" title={f.destination}>{f.destination}</td>
-                    <td className="px-3 py-2.5 text-sm">{f.km_inicial || 0}</td>
-                    <td className="px-3 py-2.5 text-sm">{f.km_final || 0}</td>
-                    <td className="px-3 py-2.5">
-                      <div className="text-xs text-text-secondary max-w-[150px] truncate" title={f.additional_cities?.map((c: any) => c.name).join(', ')}>
+                    <td className="px-3 py-2.5 text-sm font-bold max-w-[180px] truncate border-r border-slate-200 dark:border-slate-700" title={f.drivers?.name}>{f.drivers?.name || '-'}</td>
+                    <td className="px-3 py-2.5 text-sm max-w-[120px] truncate border-r border-slate-200 dark:border-slate-700" title={f.routes?.id}>{f.routes?.id || '-'}</td>
+                    <td className="px-3 py-2.5 text-sm font-semibold border-r border-slate-200 dark:border-slate-700">{f.manifesto || '-'}</td>
+                    <td className="px-3 py-2.5 text-sm text-text-secondary border-r border-slate-200 dark:border-slate-700">{new Date(f.freight_date).toLocaleDateString('pt-BR')}</td>
+                    <td className="px-3 py-2.5 text-sm max-w-[150px] truncate border-r border-slate-200 dark:border-slate-700" title={f.origin}>{f.origin}</td>
+                    <td className="px-3 py-2.5 text-sm max-w-[150px] truncate border-r border-slate-200 dark:border-slate-700" title={f.destination}>{f.destination}</td>
+                    <td className="px-3 py-2.5 text-sm border-r border-slate-200 dark:border-slate-700">{f.km_inicial || 0}</td>
+                    <td className="px-3 py-2.5 text-sm border-r border-slate-200 dark:border-slate-700">{f.km_final || 0}</td>
+                    <td className="px-3 py-2.5 border-r border-slate-200 dark:border-slate-700">
+                      <div className="text-xs text-text-secondary whitespace-normal" title={f.additional_cities?.map((c: any) => c.name).join(', ')}>
                         {f.additional_cities && f.additional_cities.length > 0
-                          ? f.additional_cities.length + ' cidade(s)'
+                          ? f.additional_cities.map((c: any) => c.name).join(', ')
                           : '-'}
                       </div>
                     </td>
-                    <td className="px-3 py-2.5 text-sm">{f.total_pontos || 0}</td>
-                    <td className="px-3 py-2.5 text-sm">R$ {f.tolls?.toFixed(2) || '0.00'}</td>
-                    <td className="px-3 py-2.5 font-bold text-sm text-primary">R$ {f.value.toFixed(2)}</td>
+                    <td className="px-3 py-2.5 text-sm border-r border-slate-200 dark:border-slate-700">{f.total_pontos || 0}</td>
+                    <td className="px-3 py-2.5 text-sm border-r border-slate-200 dark:border-slate-700">R$ {f.tolls?.toFixed(2) || '0.00'}</td>
+                    <td className="px-3 py-2.5 font-bold text-sm text-primary border-r border-slate-200 dark:border-slate-700">R$ {f.value.toFixed(2)}</td>
                     <td className="px-3 py-2.5 flex gap-1 justify-center">
                       <button className="p-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-text-secondary hover:text-primary transition-colors" title="Visualizar">
                         <span className="material-symbols-outlined text-[18px]">visibility</span>

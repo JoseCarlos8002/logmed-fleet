@@ -61,11 +61,16 @@ const App: React.FC = () => {
   };
 
   useEffect(() => {
+    console.log("App mounted, checking session...");
     supabase.auth.getSession().then(({ data: { session } }) => {
+      console.log("Session retrieved:", session ? "User logged in" : "No user");
       setSession(session);
       if (session?.user) {
         fetchProfile(session.user.id);
       }
+      setLoading(false);
+    }).catch(err => {
+      console.error("Failed to get session:", err);
       setLoading(false);
     });
 

@@ -187,31 +187,31 @@ export const Freight: React.FC = () => {
         </div>
       </div>
 
-      <div className="bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm">
-        <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse whitespace-nowrap">
-            <thead>
-              <tr className="bg-slate-50 dark:bg-slate-800/50 border-b border-slate-200 dark:border-slate-700">
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Motorista</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Rota</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Manifesto</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Data</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Origem</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Destino</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">KM Ini</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">KM Fim</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Cidades Adic.</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Pontos</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Pedágios</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Valor Total</th>
-                <th className="px-4 py-4 text-xs font-bold uppercase text-text-secondary tracking-wider">Ações</th>
+      <div className="bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-700 rounded-xl overflow-hidden shadow-sm flex flex-col h-[calc(100vh-200px)]">
+        <div className="overflow-auto flex-1">
+          <table className="w-full text-left border-collapse whitespace-nowrap relative">
+            <thead className="sticky top-0 z-10 bg-slate-50 dark:bg-slate-800 shadow-sm">
+              <tr className="border-b border-slate-200 dark:border-slate-700">
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[150px]">Motorista</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Rota</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Manifesto</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Data</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[120px]">Origem</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[120px]">Destino</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-20">KM Ini</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-20">KM Fim</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Cidades Adic.</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-16">Pts</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Pedágios</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider min-w-[100px]">Valor Total</th>
+                <th className="px-3 py-3 text-xs font-bold uppercase text-text-secondary tracking-wider w-20 text-center">Ações</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
               {loading ? (
                 <tr>
                   <td colSpan={13} className="p-0">
-                    <TableSkeleton rows={5} />
+                    <TableSkeleton rows={10} />
                   </td>
                 </tr>
               ) : freights.length === 0 ? (
@@ -227,34 +227,36 @@ export const Freight: React.FC = () => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     key={f.id}
-                    className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors"
+                    className="hover:bg-slate-50 dark:hover:bg-slate-800/50 transition-colors group"
                   >
-                    <td className="px-4 py-4 text-sm font-bold">{f.drivers?.name || '-'}</td>
-                    <td className="px-4 py-4 text-sm">{f.routes?.id || '-'}</td>
-                    <td className="px-4 py-4 text-sm font-semibold">{f.manifesto || '-'}</td>
-                    <td className="px-4 py-4 text-sm text-text-secondary">{new Date(f.freight_date).toLocaleDateString('pt-BR')}</td>
-                    <td className="px-4 py-4 text-sm">{f.origin}</td>
-                    <td className="px-4 py-4 text-sm">{f.destination}</td>
-                    <td className="px-4 py-4 text-sm">{f.km_inicial || 0}</td>
-                    <td className="px-4 py-4 text-sm">{f.km_final || 0}</td>
-                    <td className="px-4 py-4">
+                    <td className="px-3 py-2.5 text-sm font-bold max-w-[180px] truncate" title={f.drivers?.name}>{f.drivers?.name || '-'}</td>
+                    <td className="px-3 py-2.5 text-sm max-w-[120px] truncate" title={f.routes?.id}>{f.routes?.id || '-'}</td>
+                    <td className="px-3 py-2.5 text-sm font-semibold">{f.manifesto || '-'}</td>
+                    <td className="px-3 py-2.5 text-sm text-text-secondary">{new Date(f.freight_date).toLocaleDateString('pt-BR')}</td>
+                    <td className="px-3 py-2.5 text-sm max-w-[150px] truncate" title={f.origin}>{f.origin}</td>
+                    <td className="px-3 py-2.5 text-sm max-w-[150px] truncate" title={f.destination}>{f.destination}</td>
+                    <td className="px-3 py-2.5 text-sm">{f.km_inicial || 0}</td>
+                    <td className="px-3 py-2.5 text-sm">{f.km_final || 0}</td>
+                    <td className="px-3 py-2.5">
                       <div className="text-xs text-text-secondary max-w-[150px] truncate" title={f.additional_cities?.map((c: any) => c.name).join(', ')}>
                         {f.additional_cities && f.additional_cities.length > 0
                           ? f.additional_cities.length + ' cidade(s)'
                           : '-'}
                       </div>
                     </td>
-                    <td className="px-4 py-4 text-sm">{f.total_pontos || 0}</td>
-                    <td className="px-4 py-4 text-sm">R$ {f.tolls?.toFixed(2) || '0.00'}</td>
-                    <td className="px-4 py-4 font-bold text-sm text-primary">R$ {f.value.toFixed(2)}</td>
-                    <td className="px-4 py-4 flex gap-2">
-                      <button className="material-symbols-outlined text-text-secondary hover:text-primary transition-colors" title="Visualizar">visibility</button>
+                    <td className="px-3 py-2.5 text-sm">{f.total_pontos || 0}</td>
+                    <td className="px-3 py-2.5 text-sm">R$ {f.tolls?.toFixed(2) || '0.00'}</td>
+                    <td className="px-3 py-2.5 font-bold text-sm text-primary">R$ {f.value.toFixed(2)}</td>
+                    <td className="px-3 py-2.5 flex gap-1 justify-center">
+                      <button className="p-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-text-secondary hover:text-primary transition-colors" title="Visualizar">
+                        <span className="material-symbols-outlined text-[18px]">visibility</span>
+                      </button>
                       <button
                         onClick={() => handleDeleteFreight(f.id, f.manifesto)}
-                        className="material-symbols-outlined text-text-secondary hover:text-danger transition-colors"
+                        className="p-1 rounded-full hover:bg-slate-100 dark:hover:bg-slate-700 text-text-secondary hover:text-danger transition-colors"
                         title="Excluir"
                       >
-                        delete
+                        <span className="material-symbols-outlined text-[18px]">delete</span>
                       </button>
                     </td>
                   </motion.tr>

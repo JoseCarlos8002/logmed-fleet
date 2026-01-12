@@ -1,0 +1,121 @@
+
+--- Analyzing: Formulßrio - Fechamento - exemplo.xlsx ---
+
+Sheet: BASE
+Headers: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15', 'Unnamed: 16', 'Unnamed: 17', 'Unnamed: 18', 'Unnamed: 19', 'Unnamed: 20', 'Unnamed: 21', 'Unnamed: 22', 'Unnamed: 23', 'Unnamed: 24', 'Unnamed: 25', 'Unnamed: 26', 'Unnamed: 27', 'Unnamed: 28', 'Unnamed: 29', 'Unnamed: 30', 'Unnamed: 31', 'Unnamed: 32', 'Unnamed: 33', 'Unnamed: 34', 'Unnamed: 35', 'Unnamed: 36', 'Unnamed: 37', 'Unnamed: 38', 'Unnamed: 39', 'Unnamed: 40', 'Unnamed: 41', 'Unnamed: 42', 'Unnamed: 43', 'Unnamed: 44', 'Unnamed: 45', 'Unnamed: 46', 'Unnamed: 47', 'Unnamed: 48', 'Unnamed: 49', 'Unnamed: 50', 'Unnamed: 51', 'Unnamed: 52', 'Unnamed: 53', 'Unnamed: 54', 'Unnamed: 55', 'Unnamed: 56', 'Unnamed: 57', 'Unnamed: 58', 'Unnamed: 59', 'Unnamed: 60', 'Unnamed: 61', 'Unnamed: 62', 'Unnamed: 63', 'Unnamed: 64', 'Unnamed: 65', 'Unnamed: 66', 'Unnamed: 67', 'Unnamed: 68', 'Unnamed: 69', 'Unnamed: 70', 'Unnamed: 71', 'Unnamed: 72', 'Unnamed: 73', 'Unnamed: 74', 'Unnamed: 75', 'Unnamed: 76', 'Unnamed: 77', 'Unnamed: 78', 'Unnamed: 79']
+Sample Data (first 3 rows):
+ Unnamed: 0 Unnamed: 1 Unnamed: 2         Unnamed: 3 Unnamed: 4   Unnamed: 5  Unnamed: 6  Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11 Unnamed: 12 Unnamed: 13  Unnamed: 14 Unnamed: 15 Unnamed: 16 Unnamed: 17  Unnamed: 18  Unnamed: 19  Unnamed: 20  Unnamed: 21  Unnamed: 22  Unnamed: 23  Unnamed: 24 Unnamed: 25  Unnamed: 26 Unnamed: 27  Unnamed: 28 Unnamed: 29  Unnamed: 30  Unnamed: 31  Unnamed: 32  Unnamed: 33  Unnamed: 34  Unnamed: 35  Unnamed: 36    Unnamed: 37  Unnamed: 38  Unnamed: 39  Unnamed: 40 Unnamed: 41  Unnamed: 42  Unnamed: 43                    Unnamed: 44  Unnamed: 45  Unnamed: 46  Unnamed: 47  Unnamed: 48  Unnamed: 49  Unnamed: 50  Unnamed: 51  Unnamed: 52  Unnamed: 53           Unnamed: 54  Unnamed: 55  Unnamed: 56  Unnamed: 57 Unnamed: 58  Unnamed: 59  Unnamed: 60  Unnamed: 61  Unnamed: 62  Unnamed: 63                                                                                                                                                                                                                      Unnamed: 64  Unnamed: 65 Unnamed: 66  Unnamed: 67          Unnamed: 68         Unnamed: 69          Unnamed: 70         Unnamed: 71  Unnamed: 72  Unnamed: 73                       Unnamed: 74  Unnamed: 75  Unnamed: 76  Unnamed: 77  Unnamed: 78  Unnamed: 79
+        NaN        NaT        NaN                NaN        NaN          NaN         NaN         NaN         NaN         NaN          NaN          NaN         NaT         NaN          NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN         NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN         NaN          NaN          NaN                            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN                   NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN                                                                                                                                                                                                                              NaN          NaN         NaN          NaN                  NaN                 NaT                  NaN                 NaT          NaN          NaN                               NaN          NaN          NaN          NaN          NaN          NaN
+        NaN        NaT        NaN                NaN        NaN          NaN         NaN         NaN         NaN         NaN          NaN          NaN         NaT         NaN          NaN         NaN         NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN         NaN          NaN         NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN            NaN          NaN          NaN          NaN         NaN          NaN          NaN                            NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN          NaN                   NaN          NaN          NaN          NaN         NaN          NaN          NaN          NaN          NaN          NaN                                                                                                                                                                                                                              NaN          NaN         NaN          NaN                  NaN                 NaT                  NaN                 NaT          NaN          NaN                               NaN          NaN          NaN          NaN          NaN          NaN
+   218618.0 2025-03-06   08:00:00 HOMERO DA SILVEIRA    EHR3D61 8164368865.0         NaN         NaN         NaN         0.0    303421.38       122.55  2025-03-06    23:46:00          NaN           N           N           I          NaN      12992.0          NaN          NaN          NaN          NaN          NaN           :          NaN           :       3637.0           N          NaN 1.698104e+10          NaN          NaN          NaN          NaN          NaN ARACATUBA/LINS          NaN          NaN          NaN           A          NaN          NaN HOMERO DA SILVEIRA 08164368865          NaN          NaN      1331.91          NaN          0.0          0.0          0.0          NaN          0.0 LOGMED RIBEIRAO PRETO          NaN          NaN          NaN           N         14.0         27.0          NaN          NaN          NaN RIAADE SUPRIMENTOS MEDICOS LTDA, UNIMED ARACATUBA COOP. DE, JOHNSON & JOHNSON DO BRASIL INDUSTRIA E COMERCIO D, UNIMED DE LINS COOPERATIVA DE TRABALHO MEDICO, UNIMED DE BIRIGUI COOPERATIVA DE TRABALHO MEDICO, SAUDE HOME CARE          0.0    Agregado          NaN TATIANA BUENO SILV╔R 2025-03-06 08:00:00 THOMPSON SANTOS DE S 2025-03-06 23:46:00       122.55 3.464075e+13 GUARULHOS/CAMPINAS/RIBEIRAO PRETO          NaN          NaN          NaN          0.0          0.0
+--------------------
+
+Sheet: Plan1
+Headers: ['MOTORISTA', 'ELAINE MARIA JULIO', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5']
+Sample Data (first 3 rows):
+MOTORISTA  ELAINE MARIA JULIO Unnamed: 2  Unnamed: 3  Unnamed: 4 Unnamed: 5
+      NaN                 NaN        NaN         NaN         NaN        NaN
+      NaN                 NaN        NaN         NaN         NaN        NaN
+      NaN                 NaN        NaN         NaN         NaN        NaN
+--------------------
+
+Sheet: Ficha de SolicitaþÒo
+Headers: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13']
+Sample Data (first 3 rows):
+                                Unnamed: 0 Unnamed: 1 Unnamed: 2 Unnamed: 3 Unnamed: 4 Unnamed: 5 Unnamed: 6 Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10  Unnamed: 11  Unnamed: 12 Unnamed: 13
+                                       NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN          NaN          NaN          NaN         NaN
+                                       NaN        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN          NaN          NaN          NaN         NaN
+FORMUL┴RIO PARA SOLICITAÃ├O DE TRANSPORTES        NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN         NaN          NaN          NaN          NaN         NaN
+--------------------
+
+Sheet: CADASTRO
+Headers: ['NOME', 'CNPJ', 'PLACA']
+Sample Data (first 3 rows):
+                     NOME           CNPJ    PLACA
+         AJGP TRANSPORTES 24567746000140  SVU4F18
+     ALTAIR DE SOUZA LIMA 36629994000157  GFD5E70
+CARLOS ALBERTO MISSIMA JR 33734357000152 PZG-5430
+--------------------
+
+Sheet: VALOR FECHAMENTO
+Headers: ['MOTORISTA', 'Soma de FRETE PAGO']
+Sample Data (first 3 rows):
+                    MOTORISTA  Soma de FRETE PAGO
+             AJGP TRANSPORTES              3933.0
+         ALTAIR DE SOUZA LIMA              6495.0
+CARLOS ALBERTO MISSIMA JUNIOR              3126.0
+--------------------
+
+--- Analyzing: ROTAS RIB. PRETO - EXEMPLO.xlsx ---
+
+Sheet: C┴LCULO
+Headers: ['Unnamed: 0', 'Unnamed: 1', 'FECHAMENTO DA QUINZENA', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', 'Unnamed: 13', 'Unnamed: 14', 'Unnamed: 15']
+Sample Data (first 3 rows):
+ Unnamed: 0 Unnamed: 1 FECHAMENTO DA QUINZENA  Unnamed: 3 Unnamed: 4 Unnamed: 5 Unnamed: 6 Unnamed: 7 Unnamed: 8 Unnamed: 9  Unnamed: 10  Unnamed: 11  Unnamed: 12  Unnamed: 13 Unnamed: 14  Unnamed: 15
+        NaN      DATA:    2025-12-01 00:00:00         NaN        NaN        NaN        NaN        NaN        NaN        NaN          NaN          NaN          NaN          NaN         NaN          NaN
+        NaN MANIFESTO:                 260574         NaN        NaN        NaN        NaN        NaN        NaN        NaN          NaN          NaN          NaN          NaN         NaN          NaN
+        NaN MOTORISTA:                 CARLOS         NaN        NaN        NaN        NaN        NaN        NaN        NaN          NaN          NaN          NaN          NaN         NaN          NaN
+--------------------
+
+Sheet: BASE MANIFESTO
+Headers: ['MANIFESTO', 'DATA']
+Sample Data (first 3 rows):
+ MANIFESTO       DATA
+    260574 2025-12-01
+    260807 2025-12-02
+    261273 2025-12-04
+--------------------
+
+Sheet: PONTOS
+Headers: ['endereþo', 'Unnamed: 1', 'QTDE. PONTOS', 11]
+Sample Data (first 3 rows):
+                                     endereþo  Unnamed: 1  QTDE. PONTOS  11
+              AV LEONOR MENDES DE BARROS, 626         NaN           NaN NaN
+CHAMPAGNAT,                    CONJ  211, 863         NaN           NaN NaN
+          PC DR FRANCISCO LESSA, 162 - CENTRO         NaN           NaN NaN
+--------------------
+
+Sheet: CIDADES DA ROTA SETEMBRO 2024
+Headers: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', '-']
+Sample Data (first 3 rows):
+ Unnamed: 0 Unnamed: 1 Unnamed: 2 Unnamed: 3 Unnamed: 4       Unnamed: 5 Unnamed: 6  Unnamed: 7 Unnamed: 8  Unnamed: 9  Unnamed: 10                              Unnamed: 11  Unnamed: 12   -
+        NaN       ROTA VALOR FIXO    CIDADES        NaN              NaN        NaN         NaN        NaN         NaN          NaN                                      NaN          NaN NaN
+        NaN        1.1        550        NaN        NaN S.J.DO RIO PRETO        NaN         NaN        NaN         NaN          NaN                  --S.J.DO RIO PRETO-----          NaN NaN
+        NaN        1.4        430  BEBEDOURO   BARRETOS          OLIMPIA  CATANDUVA SERTAOZINHO        NaN         NaN          NaN BEBEDOURO-BARRETOS-OLIMPIA-CATANDUVA----          NaN NaN
+--------------------
+
+Sheet: CIDADES DA ROTA
+Headers: ['Unnamed: 0', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10', 'Unnamed: 11', 'Unnamed: 12', '-']
+Sample Data (first 3 rows):
+ Unnamed: 0 Unnamed: 1 Unnamed: 2 Unnamed: 3       Unnamed: 4       Unnamed: 5  Unnamed: 6 Unnamed: 7  Unnamed: 8  Unnamed: 9  Unnamed: 10                                        Unnamed: 11  Unnamed: 12   -
+        NaN       ROTA VALOR FIXO    CIDADES              NaN              NaN         NaN        NaN         NaN         NaN          NaN                                                NaN          NaN NaN
+        NaN        1.1        550  BEBEDOURO          OLIMPIA S.J.DO RIO PRETO         NaN        NaN         NaN         NaN          NaN            BEBEDOURO-OLIMPIA-S.J.DO RIO PRETO-----          NaN NaN
+        NaN        1.2        450    OLIMPIA S.J.DO RIO PRETO        CATANDUVA JABOTICABAL        NaN         NaN         NaN          NaN OLIMPIA-S.J.DO RIO PRETO-CATANDUVA-JABOTICABAL----          NaN NaN
+--------------------
+
+Sheet: ACR╔SCIMOS
+Headers: ['CIDADES', 'VALOR ADICIONAL R$', 'Distancia (km) da cabeþa de rota', 1.02]
+Sample Data (first 3 rows):
+         CIDADES  VALOR ADICIONAL R$  Distancia (km) da cabeþa de rota                   1.02
+EXTRA PIRASSUNGA              177.48                             174.0                    NaN
+          EXTRA               268.26                             263.0                    NaN
+          AGUDOS               38.76                              38.0 validar esse km depois
+--------------------
+
+Sheet: MOTORISTAS
+Headers: ['HOMERO', 'Unnamed: 1']
+Sample Data (first 3 rows):
+   HOMERO Unnamed: 1
+   CARLOS        NaN
+CRISTIANO        NaN
+   ALTAIR        NaN
+--------------------
+
+Sheet: FECHAMENTO KM
+Headers: ['ILSON', 'Unnamed: 1', 'Unnamed: 2', 'Unnamed: 3', 'Unnamed: 4', 'Unnamed: 5', 'Unnamed: 6', 'Unnamed: 7', 'Unnamed: 8', 'Unnamed: 9', 'Unnamed: 10']
+Sample Data (first 3 rows):
+ILSON Unnamed: 1 Unnamed: 2 Unnamed: 3 Unnamed: 4 Unnamed: 5 Unnamed: 6  Unnamed: 7 Unnamed: 8  Unnamed: 9   Unnamed: 10
+ DATA  MANIFESTO KM INICIAL   KM FINAL    KM DIA      PONTOS    PEDAGIO         NaN   Valor KM Valor Ponto Total Pedagio
+  NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN       1.02           7             0
+  NaN        NaN        NaN        NaN        NaN        NaN        NaN         NaN        NaN         NaN           NaN
+--------------------
